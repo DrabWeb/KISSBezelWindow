@@ -44,9 +44,9 @@ class ViewController: NSViewController {
     
     func getAndSetValues() {
         // If the argument count is less than 6...
-        if(NSProcessInfo.processInfo().arguments.count < 6) {
+        if(NSProcessInfo.processInfo().arguments.count < 7) {
             // Print how to use the binary
-            print("Usage: KISSPopoverBezel <Label> <Image> <Fade in/out time> <How long to stay> <Blend label(true or false)>");
+            print("Usage: KISSPopoverBezel <Label> <Image> <Fade in/out time> <How long to stay> <Blend label(true or false)> <Template(true or false)>");
             
             // Quit the app
             quitApplication();
@@ -98,6 +98,12 @@ class ViewController: NSViewController {
         else if(NSProcessInfo.processInfo().arguments[5] == "false") {
             // Set blendLabel to false
             blendLabel = false;
+        }
+        
+        // If the sixth argument is true...
+        if(NSProcessInfo.processInfo().arguments[6] == "true") {
+            // Set the image to be a template(Blend with vibrancy)
+            imageView.image?.template = true;
         }
     }
     
