@@ -1,2 +1,17 @@
 # KISSBezelWindow
-Show a customized bezel window from the command line(OSX)
+<img src="https://a.pomf.cat/dleixm.png">
+Show a customized bezel window from the command line
+
+## Building
+Download the source and open it in Xcode and hit run(It will bring up an error, ignore this)
+
+## Usage
+```/path/to/KISSPopoverBezel.app/Contents/MacOS/KISSPopoverBezel <Label text> <Image path(Can also be the name of a OSX system image like NSComputer, NSColorPanel, ETC.)> <Fade in/out time> <How long to be on screen> <Should the label blend in? (true or false)>```
+
+Example:
+```/path/to/KISSPopoverBezel.app/Contents/MacOS/KISSPopoverBezel NSLockUnlockedTemplate 0.2 1.5 false```
+
+Also for easy access, I would recommend an alias
+```alias kissbezelwindow="/path/to/KISSPopoverBezel.app/Contents/MacOS/KISSPopoverBezel"```
+
+This also adapts to if you have light/dark mode on
