@@ -43,6 +43,15 @@ class ViewController: NSViewController {
     }
     
     func getAndSetValues() {
+        // If the argument count is less than 6...
+        if(NSProcessInfo.processInfo().arguments.count < 6) {
+            // Print how to use the binary
+            print("Usage: KISSPopoverBezel <Label> <Image> <Fade in/out time> <How long to stay> <Blend label(true or false)>");
+            
+            // Quit the app
+            quitApplication();
+        }
+        
         // Set the label views text to the first argument
         labelView.stringValue = NSProcessInfo.processInfo().arguments[1];
         

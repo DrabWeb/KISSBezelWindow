@@ -3,7 +3,7 @@
 Show a customized bezel window from the command line
 
 ## Building
-Download the source and open it in Xcode and hit run(It will bring up an error, ignore this)
+Download the source and open it in Xcode and hit run
 
 ## Usage
 ```/path/to/KISSPopoverBezel.app/Contents/MacOS/KISSPopoverBezel <Label text> <Image path(Can also be the name of a OSX system image like NSComputer, NSColorPanel, ETC.)> <Fade in/out time> <How long to be on screen> <Should the label blend in? (true or false)>```
