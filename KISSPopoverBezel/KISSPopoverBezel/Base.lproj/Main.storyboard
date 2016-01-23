@@ -692,10 +692,10 @@
                                         </textFieldCell>
                                     </textField>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-1c-jVJ" userLabel="Image">
-                                        <rect key="frame" x="20" y="50" width="160" height="130"/>
+                                        <rect key="frame" x="20" y="62" width="160" height="118"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="160" id="R9m-oX-ZdQ"/>
-                                            <constraint firstAttribute="height" constant="130" id="XfQ-ld-Ovd"/>
+                                            <constraint firstAttribute="width" constant="160" id="Job-g2-b3u"/>
+                                            <constraint firstAttribute="height" constant="118" id="Mei-LN-pUf"/>
                                         </constraints>
                                         <animations/>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="NSCaution" id="2WU-f0-uxc"/>
@@ -703,12 +703,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Yq6-Ls-arQ" firstAttribute="leading" secondItem="pME-NG-5qA" secondAttribute="leading" constant="20" id="6yU-j4-hLB"/>
-                                    <constraint firstItem="zHe-1c-jVJ" firstAttribute="top" secondItem="pME-NG-5qA" secondAttribute="top" constant="20" id="75C-vU-3Z6"/>
-                                    <constraint firstItem="zHe-1c-jVJ" firstAttribute="leading" secondItem="pME-NG-5qA" secondAttribute="leading" constant="20" id="9Pz-tf-GPb"/>
-                                    <constraint firstAttribute="trailing" secondItem="zHe-1c-jVJ" secondAttribute="trailing" constant="20" id="Dj2-W4-1v3"/>
+                                    <constraint firstItem="Yq6-Ls-arQ" firstAttribute="top" secondItem="zHe-1c-jVJ" secondAttribute="bottom" constant="20" id="Hx8-1q-SWg"/>
                                     <constraint firstAttribute="bottom" secondItem="Yq6-Ls-arQ" secondAttribute="bottom" constant="20" id="SzV-ky-rIR"/>
+                                    <constraint firstAttribute="trailing" secondItem="zHe-1c-jVJ" secondAttribute="trailing" constant="20" id="W1E-0w-Avw"/>
                                     <constraint firstAttribute="trailing" secondItem="Yq6-Ls-arQ" secondAttribute="trailing" constant="20" id="ceT-eF-tce"/>
-                                    <constraint firstItem="Yq6-Ls-arQ" firstAttribute="top" secondItem="zHe-1c-jVJ" secondAttribute="bottom" constant="8" id="jRD-ro-GBO"/>
+                                    <constraint firstItem="zHe-1c-jVJ" firstAttribute="leading" secondItem="pME-NG-5qA" secondAttribute="leading" constant="20" id="fmE-7C-SWU"/>
+                                    <constraint firstItem="zHe-1c-jVJ" firstAttribute="top" secondItem="pME-NG-5qA" secondAttribute="top" constant="20" id="lcH-2Y-vGv"/>
                                 </constraints>
                                 <animations/>
                             </visualEffectView>
