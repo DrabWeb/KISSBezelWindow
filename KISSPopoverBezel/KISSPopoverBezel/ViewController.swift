@@ -22,6 +22,9 @@ class ViewController: NSViewController {
     // The image view for the bezel window
     @IBOutlet weak var imageView: NSImageView!
     
+    // The path to the image we want to show(If its not an OSX one)
+    var imagePath : String = "";
+    
     // How long the bezel window should stay on screen
     var screenTime : Float = 0;
     
@@ -45,8 +48,20 @@ class ViewController: NSViewController {
         
         // If the second argument contains a /...
         if(NSProcessInfo.processInfo().arguments[2].containsString("/")) {
+            // Set imagePath to the second argument
+            imagePath = NSProcessInfo.processInfo().arguments[2];
+            
+            // If the first character is a ~...
+            if(imagePath.characters.first == "~") {
+                // Remove the first character
+                imagePath = imagePath.substringFromIndex(imagePath.startIndex);
+                
+                // Prepend the home directory
+                imagePath = NSHomeDirectory() + imagePath;
+            }
+            
             // Set the image views image to the image at the directory specified in the second argument
-            imageView.image = NSImage(byReferencingFile: NSProcessInfo.processInfo().arguments[2]);
+            imageView.image = NSImage(byReferencingFile: imagePath);
         }
         else {
             // Set the image views image to the asset images specified in the second argument
