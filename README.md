@@ -1,5 +1,5 @@
 # KISSBezelWindow
-<img src="https://a.pomf.cat/dleixm.png">
+<img src="https://a.pomf.cat/xrsqak.png">
 Show a customized bezel window from the command line
 
 ## Building
