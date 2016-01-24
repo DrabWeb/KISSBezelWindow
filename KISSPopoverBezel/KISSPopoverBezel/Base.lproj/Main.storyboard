@@ -700,15 +700,24 @@
                                         <animations/>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="NSCaution" id="2WU-f0-uxc"/>
                                     </imageView>
+                                    <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dnK-9R-qSK" userLabel="Full Size Image">
+                                        <rect key="frame" x="20" y="20" width="160" height="160"/>
+                                        <animations/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" image="NSCaution" id="2Rp-r5-gOn"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Yq6-Ls-arQ" firstAttribute="leading" secondItem="pME-NG-5qA" secondAttribute="leading" constant="20" id="6yU-j4-hLB"/>
                                     <constraint firstItem="Yq6-Ls-arQ" firstAttribute="top" secondItem="zHe-1c-jVJ" secondAttribute="bottom" constant="20" id="Hx8-1q-SWg"/>
+                                    <constraint firstItem="dnK-9R-qSK" firstAttribute="leading" secondItem="pME-NG-5qA" secondAttribute="leading" constant="20" id="Rex-XY-0Wc"/>
                                     <constraint firstAttribute="bottom" secondItem="Yq6-Ls-arQ" secondAttribute="bottom" constant="20" id="SzV-ky-rIR"/>
                                     <constraint firstAttribute="trailing" secondItem="zHe-1c-jVJ" secondAttribute="trailing" constant="20" id="W1E-0w-Avw"/>
                                     <constraint firstAttribute="trailing" secondItem="Yq6-Ls-arQ" secondAttribute="trailing" constant="20" id="ceT-eF-tce"/>
                                     <constraint firstItem="zHe-1c-jVJ" firstAttribute="leading" secondItem="pME-NG-5qA" secondAttribute="leading" constant="20" id="fmE-7C-SWU"/>
+                                    <constraint firstItem="dnK-9R-qSK" firstAttribute="top" secondItem="pME-NG-5qA" secondAttribute="top" constant="20" id="grm-bm-NKw"/>
                                     <constraint firstItem="zHe-1c-jVJ" firstAttribute="top" secondItem="pME-NG-5qA" secondAttribute="top" constant="20" id="lcH-2Y-vGv"/>
+                                    <constraint firstAttribute="bottom" secondItem="dnK-9R-qSK" secondAttribute="bottom" constant="20" id="wgP-gG-hyX"/>
+                                    <constraint firstAttribute="trailing" secondItem="dnK-9R-qSK" secondAttribute="trailing" constant="20" id="y6A-wc-OlL"/>
                                 </constraints>
                                 <animations/>
                             </visualEffectView>
@@ -723,6 +732,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundVisualEffectView" destination="pME-NG-5qA" id="OUW-oX-Rot"/>
+                        <outlet property="fullSizeImageView" destination="dnK-9R-qSK" id="HK1-cf-1HW"/>
                         <outlet property="imageView" destination="zHe-1c-jVJ" id="Gqm-Lq-k69"/>
                         <outlet property="labelView" destination="Yq6-Ls-arQ" id="GN3-Gb-v4r"/>
                     </connections>
